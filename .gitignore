@@ -1,0 +1,10 @@
+# Node modules (if you use Tailwind CLI later)
+node_modules/
+dist/
+
+# Editor settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
