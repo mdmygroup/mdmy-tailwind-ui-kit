@@ -10,16 +10,70 @@
 
   <h1 class="text-4xl font-bold mb-6">Tailwind UI Kit Preview</h1>
 
-  <section class="space-y-8">
-    <!-- Example Import
-    You can manually paste components here to preview them -->
+  <div class="space-y-6">
+    <!-- Section for Buttons -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Buttons</h2>
+        <button onclick="toggleComponent('buttons')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-buttons" class="hidden mt-4"></div>
+    </section>
 
-    <!-- Example button preview -->
-    <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-      Primary Button
-    </button>
+    <!-- Section for Cards -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Cards</h2>
+        <button onclick="toggleComponent('cards')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-cards" class="hidden mt-4"></div>
+    </section>
 
-  </section>
+    <!-- Section for Dropdowns -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Dropdowns</h2>
+        <button onclick="toggleComponent('dropdowns')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-dropdowns" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Inputs -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Inputs</h2>
+        <button onclick="toggleComponent('inputs')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-inputs" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Modals -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Modals</h2>
+        <button onclick="toggleComponent('modals')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-modals" class="hidden mt-4"></div>
+    </section>
+  </div>
+
+  <script>
+    function toggleComponent(name) {
+      const el = document.getElementById(`component-${name}`);
+      if (el.classList.contains('hidden')) {
+        if (!el.innerHTML) {
+          fetch(`components/${name}.html`).then(r => r.text()).then(html => {
+            el.innerHTML = html;
+            el.classList.remove('hidden');
+          });
+        } else {
+          el.classList.remove('hidden');
+        }
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
 
 </body>
 </html>
