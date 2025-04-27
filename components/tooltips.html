@@ -1,0 +1,210 @@
+<!-- Tooltips Component -->
+<div class="space-y-8 p-6">
+    <!-- Basic Tooltips -->
+    <section>
+        <h3 class="text-lg font-semibold mb-4">Basic Tooltips</h3>
+        <div class="flex flex-wrap gap-4">
+            <!-- Top Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                    aria-describedby="tooltip-top"
+                >
+                    Hover me (Top)
+                </button>
+                <div id="tooltip-top" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 -top-10 left-1/2 -translate-x-1/2">
+                    Tooltip top
+                    <div class="absolute w-2 h-2 bg-gray-900 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Right Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                    aria-describedby="tooltip-right"
+                >
+                    Hover me (Right)
+                </button>
+                <div id="tooltip-right" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 left-full top-1/2 -translate-y-1/2 ml-2">
+                    Tooltip right
+                    <div class="absolute w-2 h-2 bg-gray-900 rotate-45 left-0 top-1/2 -translate-x-1 -translate-y-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                    aria-describedby="tooltip-bottom"
+                >
+                    Hover me (Bottom)
+                </button>
+                <div id="tooltip-bottom" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 bottom-auto top-full left-1/2 -translate-x-1/2 mt-2">
+                    Tooltip bottom
+                    <div class="absolute w-2 h-2 bg-gray-900 rotate-45 -top-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Left Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                    aria-describedby="tooltip-left"
+                >
+                    Hover me (Left)
+                </button>
+                <div id="tooltip-left" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 right-full top-1/2 -translate-y-1/2 -ml-2">
+                    Tooltip left
+                    <div class="absolute w-2 h-2 bg-gray-900 rotate-45 right-0 top-1/2 translate-x-1 -translate-y-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Styled Tooltips -->
+    <section>
+        <h3 class="text-lg font-semibold mb-4">Styled Tooltips</h3>
+        <div class="flex flex-wrap gap-4">
+            <!-- Light Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100"
+                    aria-describedby="tooltip-light"
+                >
+                    Light Style
+                </button>
+                <div id="tooltip-light" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip -top-10 left-1/2 -translate-x-1/2">
+                    Light tooltip
+                    <div class="absolute w-2 h-2 bg-white border-b border-r border-gray-200 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Colored Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+                    aria-describedby="tooltip-blue"
+                >
+                    Blue Style
+                </button>
+                <div id="tooltip-blue" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip -top-10 left-1/2 -translate-x-1/2">
+                    Blue tooltip
+                    <div class="absolute w-2 h-2 bg-blue-600 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Success Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700"
+                    aria-describedby="tooltip-success"
+                >
+                    Success Style
+                </button>
+                <div id="tooltip-success" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-green-600 rounded-lg shadow-sm opacity-0 tooltip -top-10 left-1/2 -translate-x-1/2">
+                    Success tooltip
+                    <div class="absolute w-2 h-2 bg-green-600 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tooltips -->
+    <section>
+        <h3 class="text-lg font-semibold mb-4">Interactive Tooltips</h3>
+        <div class="flex flex-wrap gap-4">
+            <!-- Click Trigger Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700"
+                    aria-describedby="tooltip-click"
+                    onclick="toggleTooltip('tooltip-click')"
+                >
+                    Click me
+                </button>
+                <div id="tooltip-click" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg shadow-sm opacity-0 -top-10 left-1/2 -translate-x-1/2">
+                    Click-triggered tooltip
+                    <div class="absolute w-2 h-2 bg-purple-600 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Rich Content Tooltip -->
+            <div class="relative inline-block">
+                <button 
+                    type="button"
+                    class="px-4 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg hover:bg-gray-800"
+                    aria-describedby="tooltip-rich"
+                >
+                    Rich Content
+                </button>
+                <div id="tooltip-rich" role="tooltip" class="absolute z-10 invisible inline-block w-64 px-3 py-2 text-sm bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip -top-28 left-1/2 -translate-x-1/2">
+                    <div class="flex items-center p-2">
+                        <div class="flex-shrink-0">
+                            <svg class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold text-gray-900">Rich tooltip title</h4>
+                            <p class="text-sm text-gray-500">This tooltip contains formatted content with icons and multiple lines of text.</p>
+                        </div>
+                    </div>
+                    <div class="absolute w-2 h-2 bg-white border-b border-r border-gray-200 rotate-45 -bottom-1 left-1/2 -translate-x-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    /* Base tooltip styles */
+    [role="tooltip"] {
+        transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    }
+    
+    /* Hover trigger for tooltips */
+    .relative:hover > [role="tooltip"]:not(#tooltip-click) {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Active class for click-triggered tooltips */
+    [role="tooltip"].active {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+</style>
+
+<script>
+    // Function to toggle click-triggered tooltips
+    function toggleTooltip(id) {
+        const tooltip = document.getElementById(id);
+        tooltip.classList.toggle('active');
+
+        // Close tooltip when clicking outside
+        document.addEventListener('click', function closeTooltip(e) {
+            if (!e.target.closest(`[aria-describedby="${id}"]`)) {
+                tooltip.classList.remove('active');
+                document.removeEventListener('click', closeTooltip);
+            }
+        });
+    }
+
+    // Close tooltips on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('[role="tooltip"].active').forEach(tooltip => {
+                tooltip.classList.remove('active');
+            });
+        }
+    });
+</script>
