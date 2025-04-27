@@ -1,0 +1,185 @@
+<!-- Basic Cards -->
+<div class="space-y-8">
+    <!-- Simple Card -->
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card Title</h5>
+        <p class="mb-3 font-normal text-gray-700">Here goes some example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Read more
+            <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Image Card -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <a href="#">
+            <img class="rounded-t-lg" src="https://picsum.photos/400/200" alt="Card image" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Image Card Title</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700">Card description with an image at the top. Perfect for blog posts, articles, or product showcases.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                Learn more
+                <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Horizontal Card -->
+    <div class="flex flex-col md:flex-row md:max-w-xl bg-white border border-gray-200 rounded-lg shadow">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://picsum.photos/200/300" alt="Card image" />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Horizontal Card Title</h5>
+            <p class="mb-3 font-normal text-gray-700">A horizontal card layout that's perfect for media objects, user profiles, or content previews.</p>
+        </div>
+    </div>
+
+    <!-- Interactive Card -->
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300">
+        <div class="flex items-center mb-4">
+            <img class="w-10 h-10 rounded-full mr-4" src="https://picsum.photos/40" alt="Avatar" />
+            <div>
+                <h5 class="text-xl font-bold text-gray-900">Interactive Card</h5>
+                <p class="text-sm text-gray-600">Posted by John Doe</p>
+            </div>
+        </div>
+        <p class="mb-3 font-normal text-gray-700">This card has hover effects and interactive elements.</p>
+        <div class="flex items-center space-x-4 mt-4">
+            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"></path>
+                </svg>
+                Like
+            </button>
+            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                </svg>
+                Comment
+            </button>
+            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
+                </svg>
+                Share
+            </button>
+        </div>
+    </div>
+
+    <!-- Pricing Card -->
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <h5 class="mb-4 text-xl font-medium text-gray-500">Standard plan</h5>
+        <div class="flex items-baseline text-gray-900">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span class="ml-1 text-xl font-normal text-gray-500">/month</span>
+        </div>
+        <ul class="space-y-3 my-7">
+            <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Individual configuration
+            </li>
+            <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                No setup, or hidden fees
+            </li>
+            <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Team size: Up to 10 users
+            </li>
+        </ul>
+        <button class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+    </div>
+
+    <!-- E-commerce Card -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="https://picsum.photos/300" alt="Product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+                <div class="flex items-center space-x-1">
+                    <svg class="w-4 h-4 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                    </svg>
+                </div>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">5.0</span>
+            </div>
+            <div class="flex items-center justify-between">
+                <span class="text-3xl font-bold text-gray-900">$599</span>
+                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow text-center">
+        <div class="flex flex-col items-center py-10">
+            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="https://picsum.photos/100" alt="Profile image"/>
+            <h5 class="mb-1 text-xl font-medium text-gray-900">Bonnie Green</h5>
+            <span class="text-sm text-gray-500">Visual Designer</span>
+            <div class="flex mt-4 space-x-3">
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Follow</a>
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200">Message</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Card -->
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <h5 class="text-xl font-bold text-gray-900 mb-4">Statistics</h5>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+                <div class="text-2xl font-bold text-blue-600">2.4K</div>
+                <div class="text-sm text-gray-500">Followers</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-blue-600">12.5K</div>
+                <div class="text-sm text-gray-500">Likes</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-blue-600">48</div>
+                <div class="text-sm text-gray-500">Posts</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-blue-600">9.1K</div>
+                <div class="text-sm text-gray-500">Views</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Card -->
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <div class="flex items-center mb-4">
+            <svg class="w-10 h-10 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z" clip-rule="evenodd"></path>
+                <path fill-rule="evenodd" d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.831z" clip-rule="evenodd"></path>
+            </svg>
+            <blockquote class="ml-4 text-xl italic font-semibold text-gray-900">
+                "This product has completely transformed how we do business."
+            </blockquote>
+        </div>
+        <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full" src="https://picsum.photos/50" alt="Avatar"/>
+            <div class="ml-4">
+                <div class="text-sm font-medium text-gray-900">Sarah Johnson</div>
+                <div class="text-sm text-gray-500">CEO at Company</div>
+            </div>
+        </div>
+    </div>
+</div>

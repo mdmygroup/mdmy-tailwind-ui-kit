@@ -1,0 +1,201 @@
+<!-- Dropdown Components -->
+<div class="space-y-8 p-6">
+    <!-- Basic Dropdown -->
+    <div class="relative inline-block text-left">
+        <button id="basic-dropdown-button" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            Options
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+
+        <div id="basic-dropdown-menu" class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="basic-dropdown-button">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Account settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Support</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">License</a>
+                <form method="POST" action="#">
+                    <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                        Sign out
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown with Icons -->
+    <div class="relative inline-block text-left">
+        <button id="icon-dropdown-button" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            <svg class="mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+            </svg>
+            Notifications
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+
+        <div id="icon-dropdown-menu" class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="icon-dropdown-button">
+                <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                    <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    New Message
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                    <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Completed Tasks
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-Level Dropdown -->
+    <div class="relative inline-block text-left">
+        <button id="multi-level-dropdown-button" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            More Actions
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+
+        <div id="multi-level-dropdown-menu" class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="multi-level-dropdown-button">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Main Option 1</a>
+                <div class="relative group">
+                    <button class="w-full flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                        Submenu
+                        <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="hidden group-hover:block absolute left-full top-0 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Submenu Item 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Submenu Item 2</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Main Option 2</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Dropdown -->
+    <div class="relative inline-block text-left">
+        <button id="search-dropdown-button" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            Search Options
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+
+        <div id="search-dropdown-menu" class="hidden origin-top-right absolute right-0 mt-2 w-72 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="p-4">
+                <div class="mb-4">
+                    <label for="search" class="block text-sm font-medium text-gray-700">Quick search</label>
+                    <div class="mt-1 relative rounded-md shadow-sm">
+                        <input type="text" name="search" id="search" class="focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 pr-10 py-2 sm:text-sm border-gray-300 rounded-md" placeholder="Search...">
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                        Recent searches
+                    </a>
+                    <a href="#" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                        Saved searches
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications Dropdown -->
+    <div class="relative inline-block text-left">
+        <button id="notifications-dropdown-button" type="button" class="inline-flex items-center justify-center w-10 h-10 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            <span class="sr-only">Notifications</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+        </button>
+
+        <div id="notifications-dropdown-menu" class="hidden origin-top-right absolute right-0 mt-2 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="p-4">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-semibold text-gray-900">Notifications</h3>
+                    <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-500">Mark all as read</a>
+                </div>
+                <div class="space-y-4">
+                    <a href="#" class="flex p-3 hover:bg-gray-50 rounded-lg transition duration-150 ease-in-out">
+                        <img class="h-10 w-10 rounded-full" src="https://picsum.photos/40" alt="">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Jane Smith commented on your post</p>
+                            <p class="text-sm text-gray-500">2 hours ago</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex p-3 hover:bg-gray-50 rounded-lg transition duration-150 ease-in-out">
+                        <img class="h-10 w-10 rounded-full" src="https://picsum.photos/41" alt="">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">John Doe liked your photo</p>
+                            <p class="text-sm text-gray-500">4 hours ago</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <a href="#" class="block text-center text-sm font-medium text-blue-600 hover:text-blue-500">
+                        View all notifications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Dropdowns -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to toggle dropdown
+    function toggleDropdown(buttonId, menuId) {
+        const button = document.getElementById(buttonId);
+        const menu = document.getElementById(menuId);
+        
+        if (button && menu) {
+            button.addEventListener('click', function(event) {
+                event.stopPropagation();
+                menu.classList.toggle('hidden');
+                
+                // Close other dropdowns
+                document.querySelectorAll('[id$="-dropdown-menu"]').forEach(function(dropdown) {
+                    if (dropdown.id !== menuId && !dropdown.classList.contains('hidden')) {
+                        dropdown.classList.add('hidden');
+                    }
+                });
+            });
+        }
+    }
+
+    // Initialize all dropdowns
+    toggleDropdown('basic-dropdown-button', 'basic-dropdown-menu');
+    toggleDropdown('icon-dropdown-button', 'icon-dropdown-menu');
+    toggleDropdown('multi-level-dropdown-button', 'multi-level-dropdown-menu');
+    toggleDropdown('search-dropdown-button', 'search-dropdown-menu');
+    toggleDropdown('notifications-dropdown-button', 'notifications-dropdown-menu');
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(event) {
+        document.querySelectorAll('[id$="-dropdown-menu"]').forEach(function(dropdown) {
+            if (!dropdown.classList.contains('hidden')) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    });
+});
+</script>
