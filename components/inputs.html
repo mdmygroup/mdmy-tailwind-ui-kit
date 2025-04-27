@@ -1,4 +1,168 @@
 <!-- Input Components -->
 <div class="space-y-8 max-w-2xl mx-auto p-6">
     <!-- Basic Inputs -->
-    <div class="space-y-4
+    <div class="space-y-4">
+        <label for="basic-input" class="block text-sm font-medium text-gray-700">Basic Input</label>
+        <input type="text" id="basic-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter text">
+    </div>
+
+    <!-- Input with Icon -->
+    <div class="space-y-4">
+        <label for="icon-input" class="block text-sm font-medium text-gray-700">Input with Icon</label>
+        <div class="relative mt-1 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4" />
+                </svg>
+            </div>
+            <input type="text" id="icon-input" class="block w-full pl-10 sm:text-sm border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Search">
+        </div>
+    </div>
+
+    <!-- Disabled Input -->
+    <div class="space-y-4">
+        <label for="disabled-input" class="block text-sm font-medium text-gray-700">Disabled Input</label>
+        <input type="text" id="disabled-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 text-gray-500 cursor-not-allowed sm:text-sm" placeholder="Disabled" disabled>
+    </div>
+
+    <!-- Input with Validation -->
+    <div class="space-y-4">
+        <label for="validation-input" class="block text-sm font-medium text-gray-700">Input with Validation</label>
+        <input type="text" id="validation-input" class="block w-full px-3 py-2 border border-red-500 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm" placeholder="Invalid input">
+        <p class="mt-2 text-sm text-red-600">This field is required.</p>
+    </div>
+
+    <!-- Textarea -->
+    <div class="space-y-4">
+        <label for="textarea" class="block text-sm font-medium text-gray-700">Textarea</label>
+        <textarea id="textarea" rows="4" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Write something..."></textarea>
+    </div>
+
+    <!-- Password Input -->
+    <div class="space-y-4">
+        <label for="password-input" class="block text-sm font-medium text-gray-700">Password Input</label>
+        <input type="password" id="password-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your password">
+    </div>
+
+    <!-- Number Input -->
+    <div class="space-y-4">
+        <label for="number-input" class="block text-sm font-medium text-gray-700">Number Input</label>
+        <input type="number" id="number-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter a number">
+    </div>
+
+    <!-- Date Input -->
+    <div class="space-y-4">
+        <label for="date-input" class="block text-sm font-medium text-gray-700">Date Input</label>
+        <input type="date" id="date-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+    </div>
+
+    <!-- File Input -->
+    <div class="space-y-4">
+        <label for="file-input" class="block text-sm font-medium text-gray-700">File Input</label>
+        <input type="file" id="file-input" class="block w-full text-sm text-gray-500 border border-gray-300 rounded-md shadow-sm cursor-pointer focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+    </div>
+
+    <!-- Range Input -->
+    <div class="space-y-4">
+        <label for="range-input" class="block text-sm font-medium text-gray-700">Range Input</label>
+        <input type="range" id="range-input" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Color Picker -->
+    <div class="space-y-4">
+        <label for="color-picker" class="block text-sm font-medium text-gray-700">Color Picker</label>
+        <input type="color" id="color-picker" class="w-10 h-10 p-0 border-0">
+    </div>
+
+    <!-- Search Input -->
+    <div class="space-y-4">
+        <label for="search-input" class="block text-sm font-medium text-gray-700">Search Input</label>
+        <input type="search" id="search-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Search...">
+    </div>
+
+    <!-- Email Input -->
+    <div class="space-y-4">
+        <label for="email-input" class="block text-sm font-medium text-gray-700">Email Input</label>
+        <input type="email" id="email-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your email">
+    </div>
+
+    <!-- Tel Input -->
+    <div class="space-y-4">
+        <label for="tel-input" class="block text-sm font-medium text-gray-700">Telephone Input</label>
+        <input type="tel" id="tel-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your phone number">
+    </div>
+
+    <!-- URL Input -->
+    <div class="space-y-4">
+        <label for="url-input" class="block text-sm font-medium text-gray-700">URL Input</label>
+        <input type="url" id="url-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter a URL">
+    </div>
+
+    <!-- Floating Label Input -->
+    <div class="relative">
+        <input type="text" id="floating-label-input" class="peer block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm placeholder-transparent" placeholder="Floating Label">
+        <label for="floating-label-input" class="absolute left-3 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-gray-500 peer-focus:text-sm">Floating Label</label>
+    </div>
+
+    <!-- Multi-line Input with Character Counter -->
+    <div class="space-y-2">
+        <label for="multi-line-input" class="block text-sm font-medium text-gray-700">Multi-line Input</label>
+        <textarea id="multi-line-input" rows="4" maxlength="200" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Write something..."></textarea>
+        <p id="char-counter" class="text-sm text-gray-500">0/200 characters</p>
+    </div>
+
+    <!-- Input with Tooltip -->
+    <div class="relative group">
+        <label for="tooltip-input" class="block text-sm font-medium text-gray-700">Input with Tooltip</label>
+        <input type="text" id="tooltip-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Hover for info">
+        <div class="absolute left-0 mt-1 hidden w-48 p-2 text-sm text-white bg-gray-700 rounded-md shadow-lg group-hover:block">
+            This is a tooltip with additional information.
+        </div>
+    </div>
+
+    <!-- Input with Prefix and Suffix -->
+    <div class="space-y-4">
+        <label for="prefix-suffix-input" class="block text-sm font-medium text-gray-700">Input with Prefix and Suffix</label>
+        <div class="relative mt-1 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <span class="text-gray-500 sm:text-sm">$</span>
+            </div>
+            <input type="text" id="prefix-suffix-input" class="block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="0.00">
+            <div class="absolute inset-y-0 right-0 flex items-center">
+                <span class="text-gray-500 sm:text-sm">USD</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input with Stepper -->
+    <div class="space-y-4">
+        <label for="stepper-input" class="block text-sm font-medium text-gray-700">Input with Stepper</label>
+        <div class="flex items-center">
+            <button type="button" class="px-3 py-2 border border-gray-300 rounded-l-md bg-gray-100 hover:bg-gray-200">-</button>
+            <input type="number" id="stepper-input" class="block w-16 px-3 py-2 border-t border-b border-gray-300 text-center focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" value="1">
+            <button type="button" class="px-3 py-2 border border-gray-300 rounded-r-md bg-gray-100 hover:bg-gray-200">+</button>
+        </div>
+    </div>
+
+    <!-- Input with Masking -->
+    <div class="space-y-4">
+        <label for="masked-input" class="block text-sm font-medium text-gray-700">Masked Input</label>
+        <input type="text" id="masked-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="(XXX) XXX-XXXX">
+    </div>
+
+    <!-- Input with Validation Feedback -->
+    <div class="space-y-4">
+        <label for="validation-feedback-input" class="block text-sm font-medium text-gray-700">Input with Validation Feedback</label>
+        <input type="text" id="validation-feedback-input" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter text">
+        <p class="mt-2 text-sm text-green-600">Looks good!</p>
+    </div>
+</div>
+
+<script>
+// Character Counter for Multi-line Input
+const textarea = document.getElementById('multi-line-input');
+const charCounter = document.getElementById('char-counter');
+textarea.addEventListener('input', () => {
+    charCounter.textContent = `${textarea.value.length}/200 characters`;
+});
+</script>
