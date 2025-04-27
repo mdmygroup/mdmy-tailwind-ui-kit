@@ -1,1 +1,127 @@
 <!-- Avatars component -->
+
+<!-- Basic Avatars -->
+<div class="space-y-8">
+    <!-- Avatar Sizes -->
+    <div class="flex items-center space-x-4">
+        <img class="w-6 h-6 rounded-full" src="https://ui-avatars.com/api/?name=XS&size=24" alt="XS avatar"/>
+        <img class="w-8 h-8 rounded-full" src="https://ui-avatars.com/api/?name=SM&size=32" alt="SM avatar"/>
+        <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=MD&size=40" alt="MD avatar"/>
+        <img class="w-12 h-12 rounded-full" src="https://ui-avatars.com/api/?name=LG&size=48" alt="LG avatar"/>
+        <img class="w-16 h-16 rounded-full" src="https://ui-avatars.com/api/?name=XL&size=64" alt="XL avatar"/>
+        <img class="w-20 h-20 rounded-full" src="https://ui-avatars.com/api/?name=2XL&size=80" alt="2XL avatar"/>
+    </div>
+
+    <!-- Avatar Shapes -->
+    <div class="flex items-center space-x-4">
+        <img class="w-10 h-10 rounded" src="https://ui-avatars.com/api/?name=SQ" alt="Square avatar"/>
+        <img class="w-10 h-10 rounded-lg" src="https://ui-avatars.com/api/?name=RD" alt="Rounded avatar"/>
+        <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=CR" alt="Circle avatar"/>
+    </div>
+
+    <!-- Avatar with Border -->
+    <div class="flex items-center space-x-4">
+        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300" src="https://ui-avatars.com/api/?name=BR" alt="Bordered avatar"/>
+        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-blue-500" src="https://ui-avatars.com/api/?name=BR" alt="Bordered avatar"/>
+        <img class="w-10 h-10 rounded-full ring-4 ring-green-500 ring-offset-2" src="https://ui-avatars.com/api/?name=BR" alt="Offset bordered avatar"/>
+    </div>
+
+    <!-- Avatar with Status Indicator -->
+    <div class="flex items-center space-x-4">
+        <!-- Online -->
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=ON" alt="Online avatar"/>
+            <span class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
+        </div>
+        <!-- Away -->
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=AW" alt="Away avatar"/>
+            <span class="absolute bottom-0 right-0 w-3 h-3 bg-yellow-500 border-2 border-white rounded-full"></span>
+        </div>
+        <!-- Offline -->
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=OF" alt="Offline avatar"/>
+            <span class="absolute bottom-0 right-0 w-3 h-3 bg-gray-500 border-2 border-white rounded-full"></span>
+        </div>
+        <!-- Busy -->
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=BY" alt="Busy avatar"/>
+            <span class="absolute bottom-0 right-0 w-3 h-3 bg-red-500 border-2 border-white rounded-full"></span>
+        </div>
+    </div>
+
+    <!-- Avatar with Counter/Badge -->
+    <div class="flex items-center space-x-4">
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=NT" alt="Avatar with notification"/>
+            <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-xs text-white font-bold rounded-full flex items-center justify-center">3</span>
+        </div>
+        <div class="relative">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=NT" alt="Avatar with dot"/>
+            <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+        </div>
+    </div>
+
+    <!-- Avatar Groups -->
+    <div class="flex items-center -space-x-4">
+        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://ui-avatars.com/api/?name=A1" alt="Avatar 1"/>
+        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://ui-avatars.com/api/?name=A2" alt="Avatar 2"/>
+        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://ui-avatars.com/api/?name=A3" alt="Avatar 3"/>
+        <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 rounded-full border-2 border-white hover:bg-gray-600" href="#">+99</a>
+    </div>
+
+    <!-- Avatar with Text -->
+    <div class="flex items-center space-x-4">
+        <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=JD" alt="Avatar with text"/>
+        <div class="font-medium">
+            <div>John Doe</div>
+            <div class="text-sm text-gray-500">john@example.com</div>
+        </div>
+    </div>
+
+    <!-- Placeholder Avatar -->
+    <div class="flex items-center space-x-4">
+        <!-- Initial-based placeholder -->
+        <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full">
+            <span class="font-medium text-gray-600">JD</span>
+        </div>
+        <!-- Icon-based placeholder -->
+        <div class="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full">
+            <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Interactive Avatars -->
+    <div class="flex items-center space-x-4">
+        <button type="button" class="relative inline-flex items-center p-1 text-sm font-medium text-center text-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200">
+            <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=BT" alt="Clickable avatar"/>
+            <span class="sr-only">Avatar button</span>
+        </button>
+        <div class="relative inline-block">
+            <button type="button" class="relative inline-flex items-center p-1 text-sm font-medium text-center rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200">
+                <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api/?name=DD" alt="Dropdown avatar"/>
+                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Avatar Upload -->
+<div class="mt-8">
+    <div class="flex items-center justify-center w-full">
+        <label for="avatar-upload" class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <svg class="w-8 h-8 mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                </svg>
+                <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                <p class="text-xs text-gray-500">PNG, JPG or GIF (MAX. 800x800px)</p>
+            </div>
+            <input id="avatar-upload" type="file" class="hidden" accept="image/*" />
+        </label>
+    </div>
+</div>
