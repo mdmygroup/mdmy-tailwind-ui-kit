@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind UI Kit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="bg-gray-100 p-8">
+
+  <h1 class="text-4xl font-bold mb-6">Tailwind UI Kit Preview</h1>
+
+  <div class="space-y-6">
+    <!-- Section for Alerts -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Alerts</h2>
+        <button onclick="toggleComponent('alerts')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-alerts" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Avatars -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Avatars</h2>
+        <button onclick="toggleComponent('avatars')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-avatars" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Badges -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Badges</h2>
+        <button onclick="toggleComponent('badges')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-badges" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Breadcrumbs -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Breadcrumbs</h2>
+        <button onclick="toggleComponent('breadcrumbs')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-breadcrumbs" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Buttons -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Buttons</h2>
+        <button onclick="toggleComponent('buttons')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-buttons" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Cards -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Cards</h2>
+        <button onclick="toggleComponent('cards')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-cards" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Dropdowns -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Dropdowns</h2>
+        <button onclick="toggleComponent('dropdowns')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-dropdowns" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Forms -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Forms</h2>
+        <button onclick="toggleComponent('forms')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-forms" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Inputs -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Inputs</h2>
+        <button onclick="toggleComponent('inputs')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-inputs" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Lists -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Lists</h2>
+        <button onclick="toggleComponent('lists')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-lists" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Loaders -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Loaders</h2>
+        <button onclick="toggleComponent('loaders')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-loaders" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Modals -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Modals</h2>
+        <button onclick="toggleComponent('modals')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-modals" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Navigation -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Navigation</h2>
+        <button onclick="toggleComponent('navigation')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-navigation" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Pagination -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Pagination</h2>
+        <button onclick="toggleComponent('pagination')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-pagination" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Popovers -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Popovers</h2>
+        <button onclick="toggleComponent('popovers')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-popovers" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Profile -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Profile</h2>
+        <button onclick="toggleComponent('profile')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-profile" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Stats -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Stats</h2>
+        <button onclick="toggleComponent('stats')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-stats" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Steps -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Steps</h2>
+        <button onclick="toggleComponent('steps')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-steps" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Tables -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Tables</h2>
+        <button onclick="toggleComponent('tables')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-tables" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Tabs -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Tabs</h2>
+        <button onclick="toggleComponent('tabs')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-tabs" class="hidden mt-4"></div>
+    </section>
+
+    <!-- Section for Tooltips -->
+    <section class="bg-white rounded shadow p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl font-semibold">Tooltips</h2>
+        <button onclick="toggleComponent('tooltips')" class="text-blue-600 hover:underline">Show/Hide</button>
+      </div>
+      <div id="component-tooltips" class="hidden mt-4"></div>
+    </section>
+    
+  </div>
+  
+  <script>
+    function toggleComponent(name) {
+      const el = document.getElementById(`component-${name}`);
+      if (el.classList.contains('hidden')) {
+        if (!el.innerHTML) {
+          fetch(`components/${name}.html`).then(r => r.text()).then(html => {
+            el.innerHTML = html;
+            el.classList.remove('hidden');
+          });
+        } else {
+          el.classList.remove('hidden');
+        }
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
+
+  <h2 class="text-2xl font-bold mt-12 mb-6">Sections</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="sections/hero.html" class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">Hero Sections</a>
+    <a href="sections/features.html" class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">Feature Sections</a>
+    <a href="sections/call-to-action.html" class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">Call to Action</a>
+    <a href="sections/navbar.html" class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">Navigation Bars</a>
+    <a href="sections/footer.html" class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">Footer Sections</a>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-12 mb-6">Footer Examples</h2>
+  <div class="space-y-12">
+    <iframe src="sections/footer.html" class="w-full h-screen border-0"></iframe>
+  </div>
+
+</body>
+</html>
